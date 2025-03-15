@@ -5,3 +5,5 @@
 **Organization at University** : https://drive.google.com/drive/folders/1phBEQaElB4X704K2d7hwZYTtJ4zj9kHv?usp=drive_link
 
 **Bangkit Academy** : https://drive.google.com/drive/folders/1vvj8MR6zXfzjMIGb-EUUP2O8X_7ZHfpW?usp=drive_link
+
+**Research** : https://ejurnal.seminar-id.com/index.php/bits/article/view/6923
