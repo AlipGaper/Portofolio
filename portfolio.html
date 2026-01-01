@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Alip Maskhuri Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Style for Balanced Layout -->
+  <style>
+    .portfolio-card {
+      background-color: var(--surface-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      height: 100%; /* Make all cards same height */
+    }
+
+    .portfolio-card .portfolio-img {
+      height: 250px; /* Fixed height for all images */
+      overflow: hidden;
+    }
+
+    .portfolio-card .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Crop images to fit without distortion */
+      transition: transform 0.5s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-card:hover .portfolio-img img {
+      transform: scale(1.1);
+    }
+
+    .portfolio-info {
+      padding: 1.5rem;
+    }
+
+    .portfolio-tags span {
+      padding: 4px 12px;
+      border-radius: 20px;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+      color: var(--accent-color);
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Certifications</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://x.com/dsuperrboy" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://instagram.com/dsuperrboy" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/alip-maskhuri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AlipGaper/Portofolio/" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Selected projects showcasing hands-on experience in machine learning, data analysis, computer vision, and Web3 community growth.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters justify-content-center mb-5" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ml">Machine Learning</li>
+            <li data-filter=".filter-da">Data Analysis</li>
+            <li data-filter=".filter-web3">Web3</li>
+          </ul>
+
+          <div class="row gy-5 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <!-- Sales Data Visualization -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-da">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/Pompsplace.png" alt="Sales Data Visualization" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/Pompsplace.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://docs.google.com/document/d/1a6fH1Cyg-4r4Y4xyDJwQtyB5J0BF7bj7Twn3Jd7pIhA/edit?usp=sharing" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Sales Data Visualization PompPlace</h4>
+                  <p>Data analysis project for sales overview, trend analysis, and strategic planning.</p>
+                  <div class="portfolio-tags">
+                    <span>Data Analysis</span>
+                    <span>Visualization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentiment Analysis Tokopedia -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/Sentiment.png" alt="Sentiment Analysis Tokopedia" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/Sentiment.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://github.com/AlipGaper/Sentimen-analisis-Tokopedia-Menggunakan-CNN/blob/main/README.md" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Sentiment Analysis Tokopedia Using CNN</h4>
+                  <p>Machine learning model for classifying user sentiment on e-commerce reviews using Convolutional Neural Network.</p>
+                  <div class="portfolio-tags">
+                    <span>Machine Learning</span>
+                    <span>Deep Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cars Detection Using YOLO v5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/CarsDetection.png" alt="Cars Detection" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/CarsDetection.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://docs.google.com/document/d/14g1teV6JV1Jwg58ZCkUf6QBar6P0sekJC6VDIZgmyDQ/edit?usp=sharing" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Cars Detection Using YOLO v5</h4>
+                  <p>Real-time object detection model for vehicles and license plates in CCTV footage using YOLOv5.</p>
+                  <div class="portfolio-tags">
+                    <span>Machine Learning</span>
+                    <span>Computer Vision</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Preeklamsia Detection Using XGBoost -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/preeklampsia.png" alt="Preeklamsia Detection" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/preeklampsia.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://colab.research.google.com/drive/1OYKX0R_scIzYXHb3G-jCT39xhnJJirQG?usp=sharing" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Preeklamsia Detection Using XGBoost</h4>
+                  <p>Health prediction model for detecting preeclampsia risk in pregnant women using XGBoost algorithm.</p>
+                  <div class="portfolio-tags">
+                    <span>Machine Learning</span>
+                    <span>Healthcare AI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Object Detection Using Model -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/ObjectDetection.png" alt="Object Detection" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/ObjectDetection.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://app.roboflow.com/object-detection-iq7er/alipmaskhuri-object-detection/models/alipmaskhuri-object-detection/3" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Object Detection</h4>
+                  <p>Custom trained model for detecting various objects in images using Roboflow platform and YOLO architecture.</p>
+                  <div class="portfolio-tags">
+                    <span>Machine Learning</span>
+                    <span>Computer Vision</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Development Web3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web3">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/BusinessPlann.png" alt="Web3 Business Development" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/BusinessPlann.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="https://drive.google.com/file/d/1U-ETL7X4pglaDgotiqEFbBeV9l85xEg5/view?usp=sharing" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Business Development Web3</h4>
+                  <p>Strategies for NFT/token projects, KOL partnerships, and community growth in blockchain ecosystems.</p>
+                  <div class="portfolio-tags">
+                    <span>Web3</span>
+                    <span>Business Development</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+          <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/dsuperrboy" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://instagram.com/dsuperrboy" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/alip-maskhuri" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AlipGaper/Portofolio/" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Certifications - Alip Maskhuri Portfolio</title>
+  <meta name="description" content="Professional certifications in Machine Learning, Data Science, and Visualization">
+  <meta name="keywords" content="certifications, machine learning, data science, coursera, google, bangkit">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Interactive Style for Certifications -->
+  <style>
+    .cert-card {
+      background: var(--surface-color);
+      border-radius: 16px;
+      padding: 2rem;
+      height: 100%;
+      transition: all 0.4s ease;
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cert-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: var(--accent-color);
+      transition: height 0.4s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+      border-color: var(--accent-color);
+    }
+
+    .cert-card:hover::before {
+      height: 100%;
+    }
+
+    .cert-card .service-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(13, 110, 253, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: all 0.4s ease;
+    }
+
+    .cert-card:hover .service-icon {
+      background: var(--accent-color);
+      transform: scale(1.1);
+    }
+
+    .cert-card:hover .service-icon i {
+      color: white !important;
+    }
+
+    .cert-link {
+      color: var(--accent-color);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .cert-link:hover {
+      color: white;
+      gap: 12px;
+    }
+
+    .cert-link:hover span {
+      text-decoration: underline;
+    }
+
+    .cert-link i {
+      transition: transform 0.3s ease;
+    }
+
+    .cert-link:hover i {
+      transform: translateX(5px);
+    }
+  </style>
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html" class="active">Certifications</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.linkedin.com/in/alip-maskhuri" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AlipGaper/Portofolio/" class="github"><i class="bi bi-github"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="services section py-5">
+
+      <!-- Section Title -->
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <p class="lead mb-5">Professional certifications and credentials in Machine Learning, Data Science, and related fields.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+
+          <!-- Bangkit Academy Graduate -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Bangkit Academy Graduate</h3>
+                <p>Cohort 2023 Batch 2 - Machine Learning Path by Google, GoTo, Tokopedia, Traveloka. Intensive training in data science and machine learning.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1PWdGOKUl1z-kdGlyTtt6sSofSF43kaSX/view?usp=drive_link" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Machine Learning Specialization -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Machine Learning Specialization</h3>
+                <p>Stanford University via Coursera (Andrew Ng). Completed 3 courses: Supervised/Unsupervised Learning, Advanced Algorithms, Recommenders & Reinforcement Learning.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1KoO6hLZJ9RVbUcApGvDuy6XBzPg6PKQ8/view?usp=drive_link" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mathematics for Machine Learning and Data Science -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Mathematics for Machine Learning and Data Science</h3>
+                <p>DeepLearning.AI via Coursera. Completed Linear Algebra, Calculus, and Probability & Statistics for ML.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1x4Mse1ymLV9b_o5LK3iJeJ6xxjkYTaKN/view?usp=sharing" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Advanced Learning Algorithms -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Advanced Learning Algorithms</h3>
+                <p>DeepLearning.AI & Stanford via Coursera. Mastered neural networks, decision trees, and production-ready ML systems. Taught by Andrew Ng.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1JMYRlem3EHZG04dUeWfWeSZTQUxnIUEG/view?usp=drive_link" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Share Data Through the Art of Visualization -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Share Data Through the Art of Visualization</h3>
+                <p>Google Career Certificate via Coursera. Mastered data visualization, dashboard design, and storytelling with data using Tableau and Google Sheets.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1O6ozIIsgNaDQYSF4x08miOAB75Hakgt3/view?usp=sharing target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Intensive English Program Pare, Kediri</h3>
+                <p>Intensive English Course in Kampung English Pare Kediri</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1fjAcrAAh737r3VFfPjv7-zCWGmlOhXsF/view?usp=drive_link" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>Analyze Data to Answer Questions</h3>
+                <p>Google Career Certificate via Coursera. Learned advanced data analysis techniques including sorting, filtering, formulas, pivot tables, and VLOOKUP to extract meaningful answers from complex datasets</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1agVUP1OuX4bFb16wKT-TdgfFmdXjjb6B/view?usp=sharing" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-card d-flex flex-column h-100">
+              <div class="service-icon">
+                <i class="bi bi-award-fill fs-1 text-primary"></i>
+              </div>
+              <div class="service-content flex-grow-1">
+                <h3>View All My Certificate Here</h3>
+                <p>View all my certificate regarding Data Analytics, Data Science and Machine Learning</p>
+              </div>
+              <a href="https://drive.google.com/drive/folders/1vvj8MR6zXfzjMIGb-EUUP2O8X_7ZHfpW?usp=sharing" target="_blank" class="cert-link">
+                <span>View Certificate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center gap-4 my-4">
+        <a href="https://www.linkedin.com/in/alip-maskhuri" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+        <a href="https://github.com/AlipGaper/Portofolio/" target="_blank"><i class="bi bi-github fs-3"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
